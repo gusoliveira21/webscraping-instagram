@@ -135,11 +135,13 @@ E por fim, iremos completar os campos usuário e senha:
 <br>
 Para isso, e iremos usar as funções 
 
-<ul>
- <li> driver.find_element_by_name() -> Encontrar o campo especificado com o nome. 
- <li> clear() -> Apagar qualquer dado que esteja contido no campo. 
- <li> send_keys() -> Envia a string para o campo encontrado. 
-<ul/>
+   <ul> 
+        <li>driver.find_element_by_name() -> Encontrar o campo especificado com o nome. </li> 
+        <li>clear() -> Apagar qualquer dado que esteja contido no campo.</li> 
+        <li>send_keys() -> Envia a string para o campo encontrado.</li> 
+    </ul>
+    
+
 Ficando do seguinte modo para o campo usuário.
  
 ```sh
