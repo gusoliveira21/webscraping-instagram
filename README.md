@@ -18,22 +18,22 @@
 </a>
 <p/>
 
-
-
 ## Objetivo
-<p>
+<p align='Justify'>
  Este tutorial visa dar uma visão simplista da biblioteca selenium, para agilizar o aprendizado de novos usuários nos estudos da mesma. Para isso, iremos usar o Anaconda como ambiente para desenvolvimento.
 <p/>
 
 ## O que é o selenium
-<p align=”Justify”>
+<p align='Justify'>
 O Selenium é uma lib que permite definir testes e detectar automaticamente os resultados desses testes em um navegador preferido. Um conjunto de funções do Selenium possibilita criar interações passo a passo com uma página da web, simulando um usuário normal do sistema.
 <a href='https://www.browserstack.com/guide/python-selenium-to-run-web-automation-test'>[1]<a/>
 <p/>
-
+ 
 ## 💿 Como instalar
-
+<p align='Justify'>
 Para instalar o Selenium basta executar desse modo a biblioteca será baixada para o seu ambiente Anaconda: <br>
+<p/>
+
 ```sh
 pip install selenium
 ```
@@ -57,34 +57,49 @@ import getpass
 ```
 
 ## 🛠️ Setando configurações para abrir a página web
- Como iremos aplicar este estudo usando o instagram como base, obviamente iremos usar o link do mesmo no campo url e logo após, iremos guardar as configurações para serem setadas posteriormente.
+<p align='Justify'>
+Como iremos aplicar este estudo usando o instagram como base, obviamente iremos usar o link do mesmo no campo url e logo após, iremos guardar as configurações para serem setadas posteriormente.
+<p/>
+
 ```sh
 # Pegar conteúdo HTML a partir da URL
 url = "https://www.instagram.com"
 # todas as opções disponíveis
 option = Options()
 ```
- Para que consigamos ver todo o processo acontecendo, é importante setarmos o valor False para o handler.
+
+<p align='Justify'>
+Para que consigamos ver todo o processo acontecendo, é importante setarmos o valor False para o handler.
+<p/>
+
 ```sh
 #Sete False para aparecer a págia web
 option.headless = False
 #Abre a aba do navegador
 driver = webdriver.Firefox(options=option)
 ```
+
+<p align='Justify'>
 Como o instagram é um site responsivo, dependendo do tamanho da tela ele utiliza classes diferentes, para que o trabalho seja mais facilitado iremos setar configurações para o tamanho e posição da página Web.
+<p/>
+
 ```sh
 #Define o tamanho da tela do navegador
 driver.set_window_size(448,708)
 #Define a posição da janela do navegador
 driver.set_window_position(800,200)
 ```
+
+<p align='Justify'>
 Acessa o link url
+<p/>
+
 ```sh
 #Envia o url do instagram para o navegador acessar
 driver.get(url)
 ```
 
-Até o momento este foi o resultado obtido:
+Até o momento este foi o resultado obtido: <br>
 <p align="center">
 <img src='https://user-images.githubusercontent.com/42920754/82556741-baa7e900-9b40-11ea-9db0-68f9c434cd95.PNG' width='20%'>
 <p/>
@@ -99,29 +114,36 @@ Isso pode ser facilmente resolvido apertando F12 para ver o código fonte da pá
 <img src='https://user-images.githubusercontent.com/42920754/82558322-c8ab3900-9b43-11ea-8a61-74644cc5e0f3.PNG' width='40%'>
 <p/>
 
+<p align='Justify'>
 Vamos primeiramente definir uma função que fará busca pelo elemento "username", para isso usamos find_element_by_name("username"), que procura tags HTML pelo nome:
+<p/>
 
 ```sh
 def esperar_campo(firefox):
   return driver.find_element_by_name("username")
   ```
+  
+<p align='Justify'>
 Em seguida, usaremos o WebDriverWait(driver, 5), sendo DRIVER as configurações da página web e escolhemos 5 como o tempo de espera até a função "espera_campo()" retornar com êxito:
+<p/>
 
 ```sh
 carregando = WebDriverWait(driver, 5).until(esperar_campo)
 ```
-
+<p align='Justify'>
 E por fim, iremos completar os campos usuário e senha:
 <br>
 Para isso, e iremos usar as funções 
 
 <ul>
- <li>driver.find_element_by_name() -> Encontrar o campo especificado com o nome.
- <li>clear() -> Apagar qualquer dado que esteja contido no campo.
- <li>send_keys() -> Envia a string para o campo encontrado.
+<li>driver.find_element_by_name() -> Encontrar o campo especificado com o nome.
+<li>clear() -> Apagar qualquer dado que esteja contido no campo.
+<li>send_keys() -> Envia a string para o campo encontrado.
 <ul/>
  
  Ficando do seguinte modo para o campo usuário.
+ <p/>
+ 
 ```sh
 # Insere usuário no campo
 name_campo = driver.find_element_by_name("username")
