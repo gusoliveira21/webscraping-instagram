@@ -1,7 +1,13 @@
 ## instagram-webscraping
  Este projeto tem por finalidade 
 
-![python](https://img.shields.io/github/pipenv/locked/python-version/metabolize/rq-dashboard-on-heroku?style=flat-square)
+
+<a href="https://www.python.org/">
+    	<img src="https://img.shields.io/badge/built%20with-Python3-red.svg" />
+    </a>
+    <a href="https://travis-ci.org/timgrossmann/InstaPy">
+	<img src="https://travis-ci.org/timgrossmann/InstaPy.svg?branch=master">
+    </a>
 
 <p align="center">
 <img src='https://user-images.githubusercontent.com/42920754/82489811-9e606980-9ab8-11ea-93f2-ffed391c5c37.gif' width='30%'>
