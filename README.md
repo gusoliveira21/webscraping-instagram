@@ -114,19 +114,22 @@ Ficando do seguinte modo:
 # Insere usuário no campo
 name_campo = driver.find_element_by_name("username")
 name_campo.clear()
-name_campo.send_keys(usuario)
+name_campo.send_keys("Coloque aqui o seu usuário")
 ```
 
 ```sh
 # Insere senha no campo
 senha_campo = driver.find_element_by_name("password")
 senha_campo.clear()
-senha_campo.send_keys(senha)
+senha_campo.send_keys("Coloque aqui a sua senha")
 ```
 E por fim aperta ENTER para entrar no instagram
 ```sh
 senha_campo.send_keys(Keys.ENTER)
 ```
+Desse modo, conseguimos obter o seguinte resultado:
+<br>
+<img src='https://user-images.githubusercontent.com/42920754/82576316-16ce3580-9b60-11ea-826a-2379f22ad601.gif' width='40%'>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
