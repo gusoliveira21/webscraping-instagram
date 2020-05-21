@@ -112,7 +112,7 @@ Isso pode ser facilmente resolvido apertando F12 para ver o código fonte da pá
 
 <p align="center">
 <img src='https://user-images.githubusercontent.com/42920754/82558320-c812a280-9b43-11ea-9c0d-aec58d9e037a.PNG' width='40%'>
-<img src='https://user-images.githubusercontent.com/42920754/82558322-c8ab3900-9b43-11ea-8a61-74644cc5e0f3.PNG' width='40%'>
+<img src='https://user-images.githubusercontent.com/42920754/82558322-c8ab3900-9b43-11ea-8a61-74644cc5e0f3.PNG' width='38%'>
 <p/>
 
 <p align='Justify'>
@@ -125,7 +125,7 @@ def esperar_campo(firefox):
   ```
   
 <p align='Justify'>
-Em seguida, usaremos o WebDriverWait(driver, 5), sendo DRIVER as configurações da página web e escolhemos 5 como o tempo de espera até a função "espera_campo()" retornar com êxito:
+Em seguida, usaremos o WebDriverWait(driver, 5), sendo DRIVER as configurações da página web e escolhemos 5s como o tempo de espera caso a função "espera_campo()" retornar com êxito:
 <p/>
 
 ```sh
@@ -173,15 +173,21 @@ senha_campo.send_keys(Keys.ENTER)
 
 ## ❗ Retirar notificação:
 
-Com o resultado a cima conseguimos perceber o surgimento de uma janela JavaScript que ir´´a aparecer sempre que o instagram for aberto pela primeira vez na sessão. O Selenium possue métodos para fechar janelas <a href='https://www.techbeamers.com/handle-alert-popup-selenium-python/'>(pode conferir mais aqui)<a/>, porém, vamos ver como fazer isso usando as funções que usamos até o momento
+Com o resultado a cima conseguimos perceber o surgimento de uma janela JavaScript que irá aparecer sempre que o instagram for aberto pela primeira vez na sessão. O Selenium possue métodos para fechar janelas <a href='https://www.techbeamers.com/handle-alert-popup-selenium-python/'>(pode conferir mais aqui)<a/>, porém, vamos ver como fazer isso usando as funções que usamos até o momento.
 
+Inicialmente, precisamos pegar as referências da janela pois vamos usar xpath para seleciona-la, que nada mais é do que um conjunto de regras de sintaxe para definir partes de um documento XML. <a href='http://www.macoratti.net/vb_xpath.htm'>[2]<a/>
+
+<p align="center">
+<img src='https://user-images.githubusercontent.com/42920754/82602072-e352d180-9b86-11ea-8e2f-02762d23d2e8.PNG' width='40%'>
+<img src='https://user-images.githubusercontent.com/42920754/82603081-6d4f6a00-9b88-11ea-952c-a57bcc5cd999.PNG' width='39.5%'>
+<p/>
 
 ```sh
-#Variáveis que vou precisar, elas trazem informações do código da página!
+#Variáveis que vou precisar, elas trazem informações do código da página! 
 dialog_box = "//div[@class='piCib']"
 button_dialog_box = "//button[@class='aOOlW   HoLwm ']"
 
-# Funcao para esperar caso o que foi pedido ainda não ser encontrado, espera 5s se for
+# Funcao para esperar caso a caixa de diálogo ainda não seja encontrada, e espera 5s se for.
 def espera_dialog(firefox):
   return driver.find_element_by_xpath(dialog_box)
 
