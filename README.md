@@ -134,15 +134,15 @@ carregando = WebDriverWait(driver, 5).until(esperar_campo)
 E por fim, iremos completar os campos usuário e senha:
 <br>
 Para isso, e iremos usar as funções 
+<p/>
 
 <ul>
-<li> driver.find_element_by_name() -> Encontrar o campo especificado com o nome. <li/>
-<li> clear() -> Apagar qualquer dado que esteja contido no campo. <li/>
-<li> send_keys() -> Envia a string para o campo encontrado. <li/>
+ <li> driver.find_element_by_name() -> Encontrar o campo especificado com o nome. 
+ <li> clear() -> Apagar qualquer dado que esteja contido no campo. 
+ <li> send_keys() -> Envia a string para o campo encontrado. 
 <ul/>
  
- Ficando do seguinte modo para o campo usuário.
- <p/>
+Ficando do seguinte modo para o campo usuário.
  
 ```sh
 # Insere usuário no campo
@@ -150,7 +150,9 @@ name_campo = driver.find_element_by_name("username")
 name_campo.clear()
 name_campo.send_keys("Coloque aqui o seu usuário")
 ```
+
 O mesmo se repete para o campo password.
+
 ```sh
 # Insere senha no campo
 senha_campo = driver.find_element_by_name("password")
@@ -158,9 +160,11 @@ senha_campo.clear()
 senha_campo.send_keys("Coloque aqui a sua senha")
 ```
 E por fim aperta ENTER para entrar no instagram
+
 ```sh
 senha_campo.send_keys(Keys.ENTER)
 ```
+
 Desse modo, conseguimos obter o seguinte resultado:
 <br>
 <img src='https://user-images.githubusercontent.com/42920754/82576316-16ce3580-9b60-11ea-826a-2379f22ad601.gif' width='40%'>
