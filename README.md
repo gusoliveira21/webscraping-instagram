@@ -1,6 +1,15 @@
 ## instagram-webscraping
 
 <p align="center">
+<a href='https://www.selenium.dev/'>
+<img width="20%" alt="selenium_logo_large" src="https://user-images.githubusercontent.com/42920754/82577481-6bbe7b80-9b61-11ea-997e-840983ab05fd.png">
+<a/>
+ <a href='https://www.anaconda.com/'>
+<img width="20%" alt="selenium_logo_large" src="https://user-images.githubusercontent.com/42920754/82577832-ee473b00-9b61-11ea-85c5-58011d17b0e8.PNG">
+<a/>
+<p/>
+ 
+<p align="center">
 <a href="https://github.com/SeleniumHQ/selenium">
 <img src="https://img.shields.io/badge/built%20with-Selenium-yellow.svg" />
 </a>
@@ -12,7 +21,7 @@
 
 
 ## Objetivo
-Este tutorial visa dar uma visão simplista da biblioteca selenium, para agilizar o aprendizado de novos usuários nos estudos da mesma. Neste tutorial iremos usar o Anaconda como ambiente para desenvolvimento.
+Este tutorial visa dar uma visão simplista da biblioteca selenium, para agilizar o aprendizado de novos usuários nos estudos da mesma. Para isso, iremos usar o Anaconda como ambiente para desenvolvimento.
 
 ## O que é o selenium
 O Selenium é uma lib que permite definir testes e detectar automaticamente os resultados desses testes em um navegador preferido. Um conjunto de funções do Selenium possibilita criar interações passo a passo com uma página da web, simulando um usuário normal do sistema.
