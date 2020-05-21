@@ -21,12 +21,15 @@
 
 
 ## Objetivo
-Este tutorial visa dar uma visão simplista da biblioteca selenium, para agilizar o aprendizado de novos usuários nos estudos da mesma. Para isso, iremos usar o Anaconda como ambiente para desenvolvimento.
+<p>
+ Este tutorial visa dar uma visão simplista da biblioteca selenium, para agilizar o aprendizado de novos usuários nos estudos da mesma. Para isso, iremos usar o Anaconda como ambiente para desenvolvimento.
+<p/>
 
 ## O que é o selenium
+<p align=”Justify”>
 O Selenium é uma lib que permite definir testes e detectar automaticamente os resultados desses testes em um navegador preferido. Um conjunto de funções do Selenium possibilita criar interações passo a passo com uma página da web, simulando um usuário normal do sistema.
 <a href='https://www.browserstack.com/guide/python-selenium-to-run-web-automation-test'>[1]<a/>
-
+<p/>
 
 ## 💿 Como instalar
 
@@ -140,7 +143,6 @@ Desse modo, conseguimos obter o seguinte resultado:
 <br>
 <img src='https://user-images.githubusercontent.com/42920754/82576316-16ce3580-9b60-11ea-826a-2379f22ad601.gif' width='40%'>
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 
