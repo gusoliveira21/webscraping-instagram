@@ -20,7 +20,7 @@
 
 ## Objetivo
 <p align='Justify'>
- Este tutorial visa dar uma visão simplista da biblioteca selenium, para agilizar o aprendizado de novos usuários nos estudos da mesma. Para isso, iremos usar o Anaconda como ambiente para desenvolvimento.
+Este tutorial visa dar uma visão simplista da biblioteca selenium, para agilizar o aprendizado de novos usuários nos estudos da mesma. Para isso, iremos usar o Anaconda como ambiente para desenvolvimento.
 <p/>
 
 ## O que é o selenium
@@ -105,7 +105,8 @@ Até o momento este foi o resultado obtido: <br>
 <p/>
 
 
-## 🔒(**) Setando usuário e senha:
+## 🔒(***) Setando usuário e senha:
+
 Agora precisamos identificar os nomes dos campos Usuário e Senha direto no navegador para que possamos posteriormente setar nossos usuários,  senhas e criar um tempo de espera para os mesmos.
 Isso pode ser facilmente resolvido apertando F12 para ver o código fonte da página.
 
@@ -165,13 +166,17 @@ E por fim aperta ENTER para entrar no instagram
 senha_campo.send_keys(Keys.ENTER)
 ```
 
+<p align="center">
+
 Desse modo, conseguimos obter o seguinte resultado:
+<font/>
+ 
 <br>
-<img src='https://user-images.githubusercontent.com/42920754/82576316-16ce3580-9b60-11ea-826a-2379f22ad601.gif' width='40%'>
+<img src='https://user-images.githubusercontent.com/42920754/82576316-16ce3580-9b60-11ea-826a-2379f22ad601.gif' width='20%'>
+<p align="center">
 
 
-
-
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <p align="center">
 <img src='https://user-images.githubusercontent.com/42920754/82489811-9e606980-9ab8-11ea-93f2-ffed391c5c37.gif' width='40%'>
 <img src='https://user-images.githubusercontent.com/42920754/82492237-3e6bc200-9abc-11ea-8213-ede82c7504db.gif' width='40%'>
