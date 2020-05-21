@@ -166,14 +166,10 @@ E por fim aperta ENTER para entrar no instagram
 senha_campo.send_keys(Keys.ENTER)
 ```
 
-<p align="center">
+<h4> Desse modo, conseguimos obter o seguinte resultado: <h4/>
 
-Desse modo, conseguimos obter o seguinte resultado:
-<font/>
- 
 <br>
 <img src='https://user-images.githubusercontent.com/42920754/82576316-16ce3580-9b60-11ea-826a-2379f22ad601.gif' width='20%'>
-<p align="center">
 
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
