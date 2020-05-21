@@ -32,7 +32,7 @@ O Selenium é uma lib que permite definir testes e detectar automaticamente os r
 
 Para instalar o Selenium basta executar desse modo a biblioteca será baixada para o seu ambiente Anaconda: <br>
 ```sh
-[1] pip install selenium
+pip install selenium
 ```
 
 ## 📚 Imports necessários
@@ -102,30 +102,30 @@ Vamos primeiramente definir uma função que fará busca pelo elemento "username
 def esperar_campo(firefox):
   return driver.find_element_by_name("username")
   ```
-Em seguida, usaremos o WebDriverWait(driver, 5), sendo DRIVER as configurações da página web e 5 o tempo de espera até a função "espera_campo()" retornar com êxito:
+Em seguida, usaremos o WebDriverWait(driver, 5), sendo DRIVER as configurações da página web e escolhemos 5 como o tempo de espera até a função "espera_campo()" retornar com êxito:
 
 ```sh
 carregando = WebDriverWait(driver, 5).until(esperar_campo)
 ```
 
 E por fim, iremos completar os campos usuário e senha:
+<br>
 Para isso, e iremos usar as funções 
 
-```sh
-driver.find_element_by_name()
-clear()
-send_keys()
-```
-Para encontrar o campo, apagar qualquer dado que esteja contido e envia o usuário. O mesmo é feito para o password.
-Ficando do seguinte modo:
-
+<ul>
+ <li>driver.find_element_by_name() -> Encontrar o campo especificado com o nome.
+ <li>clear() -> Apagar qualquer dado que esteja contido no campo.
+ <li>send_keys() -> Envia a string para o campo encontrado.
+<ul/>
+ 
+ Ficando do seguinte modo para o campo usuário.
 ```sh
 # Insere usuário no campo
 name_campo = driver.find_element_by_name("username")
 name_campo.clear()
 name_campo.send_keys("Coloque aqui o seu usuário")
 ```
-
+O mesmo se repete para o campo password.
 ```sh
 # Insere senha no campo
 senha_campo = driver.find_element_by_name("password")
