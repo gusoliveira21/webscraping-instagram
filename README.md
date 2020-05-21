@@ -10,7 +10,6 @@
 <p/>
 
 
-<p align="center">
 
 ## Objetivo
 Este tutorial visa dar uma visão simplista da biblioteca selenium, para agilizar o aprendizado de novos usuários nos estudos da mesma. Neste tutorial iremos usar o Anaconda como ambiente para desenvolvimento.
@@ -19,13 +18,15 @@ Este tutorial visa dar uma visão simplista da biblioteca selenium, para agiliza
 O Selenium é uma lib que permite definir testes e detectar automaticamente os resultados desses testes em um navegador preferido. Um conjunto de funções do Selenium possibilita criar interações passo a passo com uma página da web, simulando um usuário normal do sistema.
 <a href='https://www.browserstack.com/guide/python-selenium-to-run-web-automation-test'>[1]<a/>
 
-## 💿Como instalar
+
+## 💿 Como instalar
+
 Para instalar o Selenium basta executar desse modo a biblioteca será baixada para o seu ambiente Anaconda: <br>
 ```sh
 [1] pip install selenium
 ```
 
-## Imports necessários
+## 📚 Imports necessários
 ```sh
 # Espera algo
 from selenium.webdriver.support.ui import WebDriverWait
@@ -43,7 +44,7 @@ import time
 import getpass 
 ```
 
-## Setando configurações para abrir a página web
+## 🛠️ Setando configurações para abrir a página web
  Como iremos aplicar este estudo usando o instagram como base, obviamente iremos usar o link do mesmo no campo url e logo após, iremos guardar as configurações para serem setadas posteriormente.
 ```sh
 # Pegar conteúdo HTML a partir da URL
@@ -77,7 +78,7 @@ Até o momento este foi o resultado obtido:
 <p/>
 
 
-## Setando usuário e senha:
+## 🔒(**) Setando usuário e senha:
 Agora precisamos identificar os nomes dos campos Usuário e Senha direto no navegador para que possamos posteriormente setar nossos usuários,  senhas e criar um tempo de espera para os mesmos.
 Isso pode ser facilmente resolvido apertando F12 para ver o código fonte da página.
 
@@ -126,17 +127,18 @@ E por fim aperta ENTER para entrar no instagram
 ```sh
 senha_campo.send_keys(Keys.ENTER)
 ```
+
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 
 <p align="center">
-<img src='https://user-images.githubusercontent.com/42920754/82489811-9e606980-9ab8-11ea-93f2-ffed391c5c37.gif' width='30%'>
-<img src='https://user-images.githubusercontent.com/42920754/82492237-3e6bc200-9abc-11ea-8213-ede82c7504db.gif' width='30%'>
+<img src='https://user-images.githubusercontent.com/42920754/82489811-9e606980-9ab8-11ea-93f2-ffed391c5c37.gif' width='40%'>
+<img src='https://user-images.githubusercontent.com/42920754/82492237-3e6bc200-9abc-11ea-8213-ede82c7504db.gif' width='40%'>
 <p/>
 
-<p/>
 ## :memo: License
+
 This project is under the MIT license. See the [LICENSE](https://github.com/gusoliveira/webscraping-instagram/blob/master/LICENSE) for more information.
 
 Made with by gusoliveira21 :wave: [Get in touch!](https://www.linkedin.com/in/gustavo-dami%C3%A3o-magina-de-oliveira-492b0015b/)
