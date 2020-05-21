@@ -56,7 +56,7 @@ import time
 import getpass 
 ```
 
-## 🛠️ Setando configurações para abrir a página web
+## 🛠️ Setando configurações para abrir a página web:
 <p align='Justify'>
 Como iremos aplicar este estudo usando o instagram como base, obviamente iremos usar o link do mesmo no campo url e logo após, iremos guardar as configurações para serem setadas posteriormente.
 <p/>
@@ -175,7 +175,7 @@ senha_campo.send_keys(Keys.ENTER)
 
 Com o resultado a cima conseguimos perceber o surgimento de uma janela JavaScript que irá aparecer sempre que o instagram for aberto pela primeira vez na sessão. O Selenium possue métodos para fechar janelas <a href='https://www.techbeamers.com/handle-alert-popup-selenium-python/'>(pode conferir mais aqui)<a/>, porém, vamos ver como fazer isso usando as funções que usamos até o momento.
 
-Inicialmente, precisamos pegar as referências da janela pois vamos usar xpath para seleciona-la, que nada mais é do que um conjunto de regras de sintaxe para definir partes de um documento XML. <a href='http://www.macoratti.net/vb_xpath.htm'>[2]<a/>
+Inicialmente, precisamos pegar as referências da janela pois vamos usar xpath para seleciona-la, que nada mais é do que um conjunto de regras de sintaxe para definir partes de um documento XML, e armazenar em variáveis. <a href='http://www.macoratti.net/vb_xpath.htm'>[2]<a/>
 
 <p align="center">
 <img src='https://user-images.githubusercontent.com/42920754/82602072-e352d180-9b86-11ea-8e2f-02762d23d2e8.PNG' width='40%'>
@@ -186,15 +186,25 @@ Inicialmente, precisamos pegar as referências da janela pois vamos usar xpath p
 #Variáveis que vou precisar, elas trazem informações do código da página! 
 dialog_box = "//div[@class='piCib']"
 button_dialog_box = "//button[@class='aOOlW   HoLwm ']"
+```
 
+Após, criaremos uma função similar a função ***esperar_campo()***, e ela será chamada de ***espera_dialog()*** e irá retornar retornar uma resposta quando a dialog box carregar.
+
+```sh
 # Funcao para esperar caso a caixa de diálogo ainda não seja encontrada, e espera 5s se for.
 def espera_dialog(firefox):
   return driver.find_element_by_xpath(dialog_box)
+```
 
-# Espera janela de dialogo inicial
+Espera até a função ***espera_dialog()*** retornar um resultado, significando que a caixa de dialogo carregou.
+
+```sh
 esperando_jane_dialog = WebDriverWait(driver, 10).until(espera_dialog)
+```
 
-# Aperta para fechar caixa de dialogo
+Damos um click no botão ***"Agora não"***
+
+```sh
 driver.find_element_by_xpath(button_dialog_box).click()
 ```
 
