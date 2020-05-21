@@ -173,9 +173,11 @@ senha_campo.send_keys(Keys.ENTER)
 
 ## ❗ Retirar notificação:
 
+<p align='Justify'>
 Com o resultado a cima conseguimos perceber o surgimento de uma janela JavaScript que irá aparecer sempre que o instagram for aberto pela primeira vez na sessão. O Selenium possue métodos para fechar janelas <a href='https://www.techbeamers.com/handle-alert-popup-selenium-python/'>(pode conferir mais aqui)<a/>, porém, vamos ver como fazer isso usando as funções que usamos até o momento.
 
 Inicialmente, precisamos pegar as referências da janela pois vamos usar xpath para seleciona-la, que nada mais é do que um conjunto de regras de sintaxe para definir partes de um documento XML, e armazenar em variáveis. <a href='http://www.macoratti.net/vb_xpath.htm'>[2]<a/>
+<p/>
 
 <p align="center">
 <img src='https://user-images.githubusercontent.com/42920754/82602072-e352d180-9b86-11ea-8e2f-02762d23d2e8.PNG' width='40%'>
@@ -202,15 +204,14 @@ Espera até a função ***espera_dialog()*** retornar um resultado, significando
 esperando_jane_dialog = WebDriverWait(driver, 10).until(espera_dialog)
 ```
 
-Damos um click no botão ***"Agora não"***
+Damos um click no botão ***"Agora não"***.
 
 ```sh
 driver.find_element_by_xpath(button_dialog_box).click()
 ```
-
-
-
-
+<p align="center">
+<img src='https://user-images.githubusercontent.com/42920754/82611072-0cc72980-9b96-11ea-93d7-db3a2f04b923.gif' width='30%'>
+<p/>
 
 
 
