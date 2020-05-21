@@ -18,18 +18,18 @@
 </a>
 <p/>
 
-## Objetivo
+## 😏 Objetivo:
 <p align='Justify'>
 Este tutorial visa dar uma visão simplista da biblioteca selenium, para agilizar o aprendizado de novos usuários nos estudos da mesma. Para isso, iremos usar o Anaconda como ambiente para desenvolvimento.
 <p/>
 
-## O que é o selenium
+## O que é o selenium ❓
 <p align='Justify'>
 O Selenium é uma lib que permite definir testes e detectar automaticamente os resultados desses testes em um navegador preferido. Um conjunto de funções do Selenium possibilita criar interações passo a passo com uma página da web, simulando um usuário normal do sistema.
 <a href='https://www.browserstack.com/guide/python-selenium-to-run-web-automation-test'>[1]<a/>
 <p/>
  
-## 💿 Como instalar
+## 💿 Como instalar:
 <p align='Justify'>
 Para instalar o Selenium basta executar desse modo a biblioteca será baixada para o seu ambiente Anaconda: <br>
 <p/>
@@ -38,7 +38,7 @@ Para instalar o Selenium basta executar desse modo a biblioteca será baixada pa
 pip install selenium
 ```
 
-## 📚 Imports necessários
+## 📚 Imports necessários:
 ```sh
 # Espera algo
 from selenium.webdriver.support.ui import WebDriverWait
@@ -171,7 +171,45 @@ senha_campo.send_keys(Keys.ENTER)
 <br>
 <img src='https://user-images.githubusercontent.com/42920754/82576316-16ce3580-9b60-11ea-826a-2379f22ad601.gif' width='20%'>
 
+## ❗ Retirar notificação:
 
+Com o resultado a cima conseguimos perceber o surgimento de uma janela JavaScript que ir´´a aparecer sempre que o instagram for aberto pela primeira vez na sessão. O Selenium possue métodos para fechar janelas <a href='https://www.techbeamers.com/handle-alert-popup-selenium-python/'>(pode conferir mais aqui)<a/>, porém, vamos ver como fazer isso usando as funções que usamos até o momento
+
+
+```sh
+#Variáveis que vou precisar, elas trazem informações do código da página!
+dialog_box = "//div[@class='piCib']"
+button_dialog_box = "//button[@class='aOOlW   HoLwm ']"
+
+# Funcao para esperar caso o que foi pedido ainda não ser encontrado, espera 5s se for
+def espera_dialog(firefox):
+  return driver.find_element_by_xpath(dialog_box)
+
+# Espera janela de dialogo inicial
+esperando_jane_dialog = WebDriverWait(driver, 10).until(espera_dialog)
+
+# Aperta para fechar caixa de dialogo
+driver.find_element_by_xpath(button_dialog_box).click()
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <p align="center">
 <img src='https://user-images.githubusercontent.com/42920754/82489811-9e606980-9ab8-11ea-93f2-ffed391c5c37.gif' width='40%'>
