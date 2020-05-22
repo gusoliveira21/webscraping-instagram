@@ -296,14 +296,10 @@ Todas as publicações ficam dentro de um flexbox.
 
 E cada post fica dentro de um article
 
-<img src='https://user-images.githubusercontent.com/42920754/82698536-50c33880-9c41-11ea-9ed0-c4d1f4588cae.png' width='100%'>
+<img src='https://user-images.githubusercontent.com/42920754/82705010-2f684980-9c4d-11ea-8dc3-00cad503e50d.png' width='100%'>
 
 <p align="center">
 <img src='https://user-images.githubusercontent.com/42920754/82704822-c2ed4a80-9c4c-11ea-8fc6-0caab97ad75d.png' width='30%'>
-<p/>
-
-<p align="center">
-<img src='https://user-images.githubusercontent.com/42920754/82705010-2f684980-9c4d-11ea-8dc3-00cad503e50d.png' width='30%'>
 <p/>
 
 ```sh
