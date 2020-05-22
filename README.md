@@ -290,6 +290,12 @@ while(True):
 ## ❤️ Curte automaticamente publicações no instagram:
 
 Para esta funcionalidade nos precisamos compreender um pouco melhor o funcionamento do instagram.
+Todas as publicações ficam dentro de um flexbox.
+<img src='https://user-images.githubusercontent.com/42920754/82697525-78b19c80-9c3f-11ea-8fde-f0d70ef7f769.PNG' width='100%'>
+
+E cada post fica dentro de um article
+
+<img src='https://user-images.githubusercontent.com/42920754/82698536-50c33880-9c41-11ea-9ed0-c4d1f4588cae.png' width='100%'>
 
 
 ```sh
