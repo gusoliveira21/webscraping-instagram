@@ -290,6 +290,7 @@ while(True):
 ## ❤️ Curte automaticamente publicações no instagram:
 
 Para esta funcionalidade nos precisamos compreender um pouco melhor o funcionamento do instagram.
+<br>
 Todas as publicações ficam dentro de um flexbox.
 <img src='https://user-images.githubusercontent.com/42920754/82697525-78b19c80-9c3f-11ea-8fde-f0d70ef7f769.PNG' width='100%'>
 
@@ -297,6 +298,13 @@ E cada post fica dentro de um article
 
 <img src='https://user-images.githubusercontent.com/42920754/82698536-50c33880-9c41-11ea-9ed0-c4d1f4588cae.png' width='100%'>
 
+<p align="center">
+<img src='https://user-images.githubusercontent.com/42920754/82704822-c2ed4a80-9c4c-11ea-8fc6-0caab97ad75d.png' width='30%'>
+<p/>
+
+<p align="center">
+<img src='https://user-images.githubusercontent.com/42920754/82705010-2f684980-9c4d-11ea-8dc3-00cad503e50d.png' width='30%'>
+<p/>
 
 ```sh
 def curte_publicacoes():
@@ -319,6 +327,7 @@ while(True):
 <p align="center">
 <img src='https://user-images.githubusercontent.com/42920754/82489811-9e606980-9ab8-11ea-93f2-ffed391c5c37.gif' width='30%'>
 <p/>
+
 
 
 ## :memo: License
