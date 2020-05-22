@@ -219,7 +219,7 @@ Como já foi visto, o primeito passo é conseguir o endereço do botão de acess
 <img src='https://user-images.githubusercontent.com/42920754/82616860-d1802700-9ba4-11ea-9245-dc6581b51978.gif' width='30%'>
 
 <p align="center">
-Em testes, foram encontrados duas classes para os botões que precisamos, ***class='jZyv1  H-yu6'*** e ***@class='OE3OK '***, tais classes mudam de acordo com o tamanho da tela. Sendo assim, pegaremos ambas para trabalhar mesmo não tendo necessidade já que criamos uma tela 448x708 o que significa que poderemos usar somente o ***@class='OE3OK '***.
+Em testes, foram encontrados duas classes para os botões que precisamos, class='jZyv1  H-yu6' e @class='OE3OK ', tais classes mudam de acordo com o tamanho da tela. Sendo assim, pegaremos ambas para trabalhar mesmo não tendo necessidade já que criamos uma tela 448x708 o que significa que poderemos usar somente o @class='OE3OK '.
 <p/>
 
 ```sh
