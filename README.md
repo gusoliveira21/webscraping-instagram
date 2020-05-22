@@ -64,16 +64,14 @@ Como iremos aplicar este estudo usando o instagram como base, obviamente iremos 
 ```sh
 # Pegar conteúdo HTML a partir da URL
 url = "https://www.instagram.com"
-# todas as opções disponíveis
+# pega todas as opções disponíveis
 option = Options()
 ```
 
-<p align='Justify'>
 Para que consigamos ver todo o processo acontecendo, é importante setarmos o valor False para o handler.
-<p/>
 
 ```sh
-#Sete False para aparecer a págia web
+#Sete False no handless para aparecer o processo na págia web
 option.headless = False
 #Abre a aba do navegador
 driver = webdriver.Firefox(options=option)
@@ -90,9 +88,7 @@ driver.set_window_size(448,708)
 driver.set_window_position(800,200)
 ```
 
-<p align='Justify'>
 Acessa o link url
-<p/>
 
 ```sh
 #Envia o url do instagram para o navegador acessar
@@ -115,9 +111,8 @@ Isso pode ser facilmente resolvido apertando F12 para ver o código fonte da pá
 <img src='https://user-images.githubusercontent.com/42920754/82558322-c8ab3900-9b43-11ea-8a61-74644cc5e0f3.PNG' width='38%'>
 <p/>
 
-<p align='Justify'>
-Vamos primeiramente definir uma função que fará busca pelo elemento "username", para isso usamos find_element_by_name("username"), que procura tags HTML pelo nome:
-<p/>
+Vamos primeiramente definir uma função que fará uma busca pelo elemento "username", para isso usamos find_element_by_name("username"), que procura tags HTML pelo nome:
+
 
 ```sh
 def esperar_campo(firefox):
@@ -176,7 +171,7 @@ senha_campo.send_keys(Keys.ENTER)
 <p align='Justify'>
 Com o resultado a cima conseguimos perceber o surgimento de uma janela JavaScript que irá aparecer sempre que o instagram for aberto pela primeira vez na sessão. O Selenium possue métodos para fechar janelas <a href='https://www.techbeamers.com/handle-alert-popup-selenium-python/'>(pode conferir mais aqui)<a/>, porém, vamos ver como fazer isso usando as funções que usamos até o momento.
 
-Inicialmente, precisamos pegar as referências da janela pois vamos usar xpath para seleciona-la, que nada mais é do que um conjunto de regras de sintaxe para definir partes de um documento XML, e armazenar em variáveis. <a href='http://www.macoratti.net/vb_xpath.htm'>[2]<a/>
+Inicialmente, precisamos pegar as referências da janela pois vamos usar xpath, que nada mais é do que um conjunto de regras de sintaxe para definir partes de um documento XML, para seleciona-la e armazenar em variáveis. <a href='http://www.macoratti.net/vb_xpath.htm'>[2]<a/>
 <p/>
 
 <p align="center">
@@ -209,6 +204,7 @@ Damos um click no botão ***"Agora não"***.
 ```sh
 driver.find_element_by_xpath(button_dialog_box).click()
 ```
+
 <p align="center">
 <img src='https://user-images.githubusercontent.com/42920754/82611072-0cc72980-9b96-11ea-93d7-db3a2f04b923.gif' width='30%'>
 <p/>
@@ -254,7 +250,7 @@ open_story()
 ```
 
 Agora, por que não criamos uma função para ir passando os storys enquanto a janela de story estiver aberta ?
-Pode parecer totalmente inútil, mas para algumas pessoas pode vir a ser útil.
+Pode parecer totalmente inútil, mas para algumas pessoas e trabalhos pode vir a ser útil.
 Para isso, pegamos a referência a página do story para saber quando estamos ou não dentro de um story e do botão de passar visto anteriormente.
 
 ```sh
@@ -263,8 +259,13 @@ window_story ="//section[@class='_8XqED  carul']"
 #button_story_pass: É o endereço do botão para passar o story
 button_story_pass ="//button[@class='ow3u_']"
 ```
+
 Criamos um laço de repetição que recebe diretamente o valor True, para fazer o processo indefinidamente. 
-"Enquanto tiver story, tente apertar o botão para passar e espere 0.2seg, se der erro, espere 1seg e abra novamente o story."
+<br>
+É isso que o nosso código está dizendo:
+<br>
+*"Enquanto tiver story, tente apertar o botão para passar e espere 0.2seg, se der erro significa que acabou os story's, sendo assim, espere 1seg e abra novamente o story."* 
+
 
 ```sh
 #Abre os story's e vai passando
@@ -280,6 +281,7 @@ while(True):
         #esperando_story = WebDriverWait(driver, 5).until(espera_story_func)
         open_story()
 ```
+
 **Este é o resultado do programa em execução:**
 <p align="center">
 <img src='https://user-images.githubusercontent.com/42920754/82492237-3e6bc200-9abc-11ea-8213-ede82c7504db.gif' width='30%'>
