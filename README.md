@@ -20,7 +20,7 @@
 
 ## 😏 Objetivo:
 <p align='Justify'>
-Este tutorial visa dar uma visão simplista da biblioteca selenium, para agilizar o aprendizado de novos usuários nos estudos da mesma. Para isso, iremos usar o Anaconda como ambiente para desenvolvimento.
+Este tutorial visa dar uma visão simplista da biblioteca selenium, para mostrar que com poucos códigos é possível manipular uma página web e para isso, iremos usar o Anaconda como ambiente para desenvolvimento.
 <p/>
 
 ## O que é o selenium ❓
@@ -305,6 +305,13 @@ while(True):
 <p align="center">
 <img src='https://user-images.githubusercontent.com/42920754/82489811-9e606980-9ab8-11ea-93f2-ffed391c5c37.gif' width='40%'>
 <p/>
+
+## Donation
+
+Se este projeto lhe ajudou de alguma forma não esqueça de contribuir para o café desse dev! :)
+
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=BYG9EJDJW8VCA&source=url)
+
 
 ## :memo: License
 
