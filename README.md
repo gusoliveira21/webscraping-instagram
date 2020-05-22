@@ -213,7 +213,61 @@ driver.find_element_by_xpath(button_dialog_box).click()
 <img src='https://user-images.githubusercontent.com/42920754/82611072-0cc72980-9b96-11ea-93d7-db3a2f04b923.gif' width='30%'>
 <p/>
 
+## 👀 Visualizar Story's:
+Como já foi visto, o primeito passo é conseguir o endereço do botão de acesso aos storys e logo após, o botão para passar o story.
 
+<img src='https://user-images.githubusercontent.com/42920754/82616860-d1802700-9ba4-11ea-9245-dc6581b51978.gif' width='30%'>
+
+<p align="center">
+Em testes, foram encontrados duas classes para os botões que precisamos, ***class='jZyv1  H-yu6'*** e ***@class='OE3OK '***, tais classes mudam de acordo com o tamanho da tela. Sendo assim, pegaremos ambas para trabalhar mesmo não tendo necessidade já que criamos uma tela 448x708 o que significa que poderemos usar somente o ***@class='OE3OK '***.
+<p/>
+
+```sh
+#Variáveis do tamanho da tela
+window_big = "//button[@class='jZyv1  H-yu6']"
+window_little = "//button[@class='OE3OK ']"
+```
+
+O selenium possue um método chamado Click() utilizado, como o próprio nome já diz, para dar Click em um elemento. Iremos utilizar esse método para abrir os storys.
+
+```sh
+# Procedimento: Aperta para abrir um story
+def open_story ():
+    try:
+     #Tela Reduzida
+     driver.find_element_by_xpath(window_little).click()
+    except:
+     #Tela Maximizada   
+     driver.find_element_by_xpath(window_big).click()
+```
+Agora, temos um botão que podemos usar para abrir os storys:
+
+```sh
+#Abre o story
+open_story()
+```
+
+
+```sh
+
+#window_story: Diz se os story's ainda estão abertos
+window_story ="//section[@class='_8XqED  carul']"
+#button_story_pass: É o endereço do botão para passar o story
+button_story_pass ="//button[@class='ow3u_']"
+
+#Abre os story's e vai passando
+while(True):
+    # Enquanto ainda tiver story, tente apertar no botão, se der erro, espere
+    try:
+        while(driver.find_element_by_xpath(window_story)):
+            driver.find_element_by_xpath(button_story_pass).click()
+            time.sleep(0.2)
+    except Exception as e:
+        time.sleep(1)
+        #espera_story_func(firefox)
+        #esperando_story = WebDriverWait(driver, 5).until(espera_story_func)
+        open_story()
+```
 
 
 
