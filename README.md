@@ -216,7 +216,13 @@ driver.find_element_by_xpath(button_dialog_box).click()
 ## 👀 Visualizar Story's:
 Como já foi visto, o primeito passo é conseguir o endereço do botão de acesso aos storys e logo após, o botão para passar o story.
 
+<p align="center">
 <img src='https://user-images.githubusercontent.com/42920754/82616860-d1802700-9ba4-11ea-9245-dc6581b51978.gif' width='30%'>
+<br>
+<img src='https://user-images.githubusercontent.com/42920754/82691749-c5dc4100-9c34-11ea-804f-2b8f1c41eefd.png' width='44.3%'>
+<img src='https://user-images.githubusercontent.com/42920754/82691745-c4ab1400-9c34-11ea-855e-89ab41d7bdd8.png' width='40.594%'>
+<p/>
+
 
 <p align="center">
 Em testes, foram encontrados duas classes para os botões que precisamos, class='jZyv1  H-yu6' e @class='OE3OK ', tais classes mudam de acordo com o tamanho da tela. Sendo assim, pegaremos ambas para trabalhar mesmo não tendo necessidade já que criamos uma tela 448x708 o que significa que poderemos usar somente o @class='OE3OK '.
