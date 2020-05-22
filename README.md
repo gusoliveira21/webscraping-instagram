@@ -247,14 +247,20 @@ Agora, temos um botão que podemos usar para abrir os storys:
 open_story()
 ```
 
+Agora, por que não criamos uma função para ir passando os storys enquanto a janela de story estiver aberta ?
+Pode parecer totalmente inútil, mas para algumas pessoas pode vir a ser útil.
+Para isso, pegamos a referência a página do story para saber quando estamos ou não dentro de um story e do botão de passar visto anteriormente.
 
 ```sh
-
 #window_story: Diz se os story's ainda estão abertos
 window_story ="//section[@class='_8XqED  carul']"
 #button_story_pass: É o endereço do botão para passar o story
 button_story_pass ="//button[@class='ow3u_']"
+```
+Criamos um laço de repetição que recebe diretamente o valor True, para fazer o processo indefinidamente. 
+"Enquanto tiver story, tente apertar o botão para passar e espere 0.2seg, se der erro, espere 1seg e abra novamente o story."
 
+```sh
 #Abre os story's e vai passando
 while(True):
     # Enquanto ainda tiver story, tente apertar no botão, se der erro, espere
