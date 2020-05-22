@@ -279,16 +279,29 @@ while(True):
 <img src='https://user-images.githubusercontent.com/42920754/82492237-3e6bc200-9abc-11ea-8213-ede82c7504db.gif' width='40%'>
 <p/>
 
+## ❤️ Curte automaticamente publicações no instagram:
+
+Para esta funcionalidade nos precisamos compreender um pouco melhor o funcionamento do instagram.
 
 
+```sh
+def curte_publicacoes():
+    for i in range(1,9):
+        try:
+            driver.find_element_by_css_selector("article._8Rm4L:nth-child(1n) > div:nth-child(3) > section:nth-child(1) > span:nth-child(1) > button:nth-child(1) > svg:nth-child(1)[aria-label='Curtir']").click()
+        except Exception as e:
+            pass
+```
 
+```sh    
+#Desde página
+aux = 1
+while(True):
+    aux += 100
+    driver.execute_script(f'window.scrollTo(0,{aux})')
+    curte_publicacoes()            
+```
 
-
-
-
-
--------------------------------------------------------------------------------------------------------------------
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <p align="center">
 <img src='https://user-images.githubusercontent.com/42920754/82489811-9e606980-9ab8-11ea-93f2-ffed391c5c37.gif' width='40%'>
 <p/>
