@@ -300,7 +300,7 @@ Para esta funcionalidade nos precisamos compreender um pouco melhor o funcioname
 </ul>
 
 <p align="center">
-<img src='https://user-images.githubusercontent.com/42920754/82697525-78b19c80-9c3f-11ea-8fde-f0d70ef7f769.PNG' width='80%'>
+<img src='https://user-images.githubusercontent.com/42920754/82713199-83c8f480-9c60-11ea-9097-c0aa20f7fc36.PNG' width='80%'>
 <p/>
 
 <ul> 
@@ -314,7 +314,7 @@ Para esta funcionalidade nos precisamos compreender um pouco melhor o funcioname
 Logo, se faz necessário descrever o caminho que se deve percorrer até chegar no botão que deve ser clicado. Para isso, iremos recorrer a um recurso do navegador e para usa-lo basta selecionar com o botão direito do mouse a linha a qual desejamos conseguir o endereço.
 
 
-
+<img src='https://user-images.githubusercontent.com/42920754/82713272-c68acc80-9c60-11ea-8108-29006c609dbc.png' width='80%'>
 
 article._8Rm4L:nth-child(1) > div:nth-child(3) > section:nth-child(1) > span:nth-child(1) > button:nth-child(1)
 driver.find_element_by_css_selector
