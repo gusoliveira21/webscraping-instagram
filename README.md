@@ -291,14 +291,20 @@ while(True):
 
 Para esta funcionalidade nos precisamos compreender um pouco melhor o funcionamento do instagram.
 <br>
-Todas as publicações ficam dentro de um flexbox.
+
+<ul> 
+    <li>Todas as publicações ficam dentro de um flexbox.</li> 
+</ul>
+
 <img src='https://user-images.githubusercontent.com/42920754/82697525-78b19c80-9c3f-11ea-8fde-f0d70ef7f769.PNG' width='100%'>
 
-E cada post fica dentro de um article
+<ul> 
+    <li>E cada post fica dentro de um article.</li> 
+</ul>
 
-<img src='https://user-images.githubusercontent.com/42920754/82705010-2f684980-9c4d-11ea-8dc3-00cad503e50d.png' width='100%'>
 
 <p align="center">
+ <img src='https://user-images.githubusercontent.com/42920754/82705010-2f684980-9c4d-11ea-8dc3-00cad503e50d.png' width='100%'>
 <img src='https://user-images.githubusercontent.com/42920754/82704822-c2ed4a80-9c4c-11ea-8fc6-0caab97ad75d.png' width='30%'>
 <p/>
 
