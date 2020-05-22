@@ -220,8 +220,8 @@ Como já foi visto, o primeito passo é conseguir o endereço do botão de acess
 <p/>
 
 
-<p align="center">
-Em testes, foram encontrados duas classes para os botões que precisamos, class='jZyv1  H-yu6' e @class='OE3OK ', tais classes mudam de acordo com o tamanho da tela. Sendo assim, pegaremos ambas para trabalhar mesmo não tendo necessidade já que criamos uma tela 448x708 o que significa que poderemos usar somente o @class='OE3OK '.
+<p align="justify">
+Em testes, foram encontrados duas classes para os botões que precisamos, <b> class='jZyv1  H-yu6' e @class='OE3OK ' <b/>, tais classes mudam de acordo com o tamanho da tela. Sendo assim, pegaremos ambas para trabalhar mesmo não tendo necessidade já que criamos uma tela 448x708 o que significa que poderemos usar somente o <b> @class='OE3OK ' <b/>.
 <p/>
 
 ```sh
