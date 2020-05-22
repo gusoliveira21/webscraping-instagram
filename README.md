@@ -1,8 +1,5 @@
 ## instagram-webscraping
 
-
-                                                     
-                                                     
 <p align="center">
 <a href='https://www.selenium.dev/'>
 <img width="20%" alt="selenium_logo_large" src="https://user-images.githubusercontent.com/42920754/82577481-6bbe7b80-9b61-11ea-997e-840983ab05fd.png">
@@ -295,17 +292,14 @@ while(True):
 Para esta funcionalidade nos precisamos compreender um pouco melhor o funcionamento do instagram.
 <br>
 
-<ul> 
-    <li>Todas as publicações ficam dentro de um flexbox.</li> 
-</ul>
+- Todas as publicações ficam dentro de um flexbox.
 
 <p align="center">
 <img src='https://user-images.githubusercontent.com/42920754/82713199-83c8f480-9c60-11ea-9097-c0aa20f7fc36.PNG' width='80%'>
 <p/>
 
-<ul> 
-    <li>E cada post fica dentro de um article.</li> 
-</ul>
+- E cada post fica dentro de um article.
+
 
 <p align="center">
 <img src='https://user-images.githubusercontent.com/42920754/82713519-9db70700-9c61-11ea-9371-a002d6be0931.png' width='80%'>
@@ -317,9 +311,17 @@ Logo, se faz necessário descrever o caminho que se deve percorrer até chegar n
 <img src='https://user-images.githubusercontent.com/42920754/82713272-c68acc80-9c60-11ea-8108-29006c609dbc.png' width='80%'>
 <p/>
 
+Fazendo isso, conseguiremos o seguinte resultado:
+
+```sh
 article._8Rm4L:nth-child(1) > div:nth-child(3) > section:nth-child(1) > span:nth-child(1) > button:nth-child(1)
-driver.find_element_by_css_selector
- Seletor CSS 
+```
+
+Escolheremos o Seletor CSS para esse passo pois utilizaremos a função **driver.find_element_by_css_selector()**
+
+
+ 
+
 
 
 ```sh
