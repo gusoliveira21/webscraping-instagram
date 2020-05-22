@@ -308,13 +308,14 @@ Para esta funcionalidade nos precisamos compreender um pouco melhor o funcioname
 </ul>
 
 <p align="center">
-<img src='https://user-images.githubusercontent.com/42920754/82705010-2f684980-9c4d-11ea-8dc3-00cad503e50d.png' width='80%'>
+<img src='https://user-images.githubusercontent.com/42920754/82713519-9db70700-9c61-11ea-9371-a002d6be0931.png' width='80%'>
 <p/>
 
 Logo, se faz necessário descrever o caminho que se deve percorrer até chegar no botão que deve ser clicado. Para isso, iremos recorrer a um recurso do navegador e para usa-lo basta selecionar com o botão direito do mouse a linha a qual desejamos conseguir o endereço.
 
-
+<p align="center">
 <img src='https://user-images.githubusercontent.com/42920754/82713272-c68acc80-9c60-11ea-8108-29006c609dbc.png' width='80%'>
+<p/>
 
 article._8Rm4L:nth-child(1) > div:nth-child(3) > section:nth-child(1) > span:nth-child(1) > button:nth-child(1)
 driver.find_element_by_css_selector
