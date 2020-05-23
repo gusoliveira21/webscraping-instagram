@@ -40,7 +40,7 @@ pip install selenium
 
 ## 📚 Imports necessários:
 ```sh
-# Espera algo
+# Espera um determinado processo
 from selenium.webdriver.support.ui import WebDriverWait
 # Configurações da página web
 from selenium.webdriver.firefox.options import Options
@@ -74,7 +74,7 @@ Neste momento, é importante baixar os drives do navegador que iremos usar para 
 
 
 ```sh
-#Sete False no handless para aparecer o processo na págia web
+#Sete False no handless para aparecer o processo na página web
 option.headless = False
 #Abre a aba do navegador
 driver = webdriver.Firefox(options=option)
