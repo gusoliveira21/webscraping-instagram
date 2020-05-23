@@ -39,8 +39,12 @@ pip install selenium
 ```
 
 ## 📚 Imports necessários:
+
 ```sh
-# Espera um determinado processo
+  Espera um determinado processo
+```
+
+```sh
 from selenium.webdriver.support.ui import WebDriverWait
 # Configurações da página web
 from selenium.webdriver.firefox.options import Options
