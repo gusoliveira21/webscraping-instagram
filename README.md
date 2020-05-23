@@ -316,6 +316,18 @@ Fazendo isso, conseguiremos o seguinte resultado:
 ```sh
 article._8Rm4L:nth-child(1) > div:nth-child(3) > section:nth-child(1) > span:nth-child(1) > button:nth-child(1)
 ```
+Mas desse modo, conseguiremos selecionar somente o primeiro resultado a cada 8 ou 9 elementos e não é o que queremos. Para resolver este impasse, precisamos especificar mais qual elemento queremos selecionar, e neste caso são todos os elementos que não estão curtidos.
+Podemos observer logo a baixo que um elemento muda dependendo do estado da publicação:
+
+<p align="center">
+<img src='https://user-images.githubusercontent.com/42920754/82716761-8f6fe780-9c6f-11ea-8f00-5379b542121a.png' width='80%'>
+<p/>
+
+Sendo assim, precisamos inserir esta condição no nosso código, ficando do seguinte modo:
+
+```sh
+article._8Rm4L:nth-child(1n) > div:nth-child(3) > section:nth-child(1) > span:nth-child(1) > button:nth-child(1) > svg:nth-child(1)[aria-label='Curtir']
+```
 
 Escolheremos o Seletor CSS para esse passo pois utilizaremos a função **driver.find_element_by_css_selector()**
 
