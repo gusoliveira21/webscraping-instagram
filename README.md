@@ -306,7 +306,7 @@ Para esta funcionalidade nos precisamos compreender um pouco melhor o funcioname
 <img src='https://user-images.githubusercontent.com/42920754/82713519-9db70700-9c61-11ea-9371-a002d6be0931.png' width='80%'>
 <p/>
 
-<p align="justify">
+<p align="justify"> 
 Logo, se faz necessário descrever o caminho que se deve percorrer até chegar no botão que deve ser clicado. Para isso, iremos recorrer a um recurso do navegador e para usa-lo basta selecionar com o botão direito do mouse a linha a qual desejamos conseguir o endereço.
 <p/>
 
@@ -334,21 +334,18 @@ Sendo assim, precisamos inserir esta condição no nosso código, ficando do seg
 article._8Rm4L:nth-child(1n) > div:nth-child(3) > section:nth-child(1) > span:nth-child(1) > button:nth-child(1) > svg:nth-child(1)[aria-label='Curtir']
 ```
 
-Escolheremos o Seletor CSS para esse passo pois utilizaremos a função **driver.find_element_by_css_selector()**
-
-
- 
-
-
+<p align="center">
+Agora, vamos criar uma função chamada **curte_publicacoes()** com um **Try Catch** para curtir os elementos encontrados e em caso de alguma excessão, usamos o atributo **pass** que significa passar, ou seja, deixa passar a ocorrência.
+<p/>
 
 ```sh
 def curte_publicacoes():
-    for i in range(1,9):
-        try:
-            driver.find_element_by_css_selector("article._8Rm4L:nth-child(1n) > div:nth-child(3) > section:nth-child(1) > span:nth-child(1) > button:nth-child(1) > svg:nth-child(1)[aria-label='Curtir']").click()
-        except Exception as e:
-            pass
+    try:
+        driver.find_element_by_css_selector("article._8Rm4L:nth-child(1n) > div:nth-child(3) > section:nth-child(1) > span:nth-child(1) > button:nth-child(1) > svg:nth-child(1)[aria-label='Curtir']").click()
+    except Exception as e:
+        pass
 ```
+
 
 ```sh    
 #Desde página
@@ -359,9 +356,6 @@ while(True):
     curte_publicacoes()            
 ```
 
-<p align="center">
-<img src='https://user-images.githubusercontent.com/42920754/82489811-9e606980-9ab8-11ea-93f2-ffed391c5c37.gif' width='30%'>
-<p/>
 
 
 
