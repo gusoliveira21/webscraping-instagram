@@ -248,10 +248,11 @@ Agora, temos um botão que podemos usar para abrir os storys:
 #Abre o story
 open_story()
 ```
-
+<p align="justify">
 Agora, por que não criamos uma função para ir passando os storys enquanto a janela de story estiver aberta ?
 Pode parecer totalmente inútil, mas para algumas pessoas e trabalhos pode vir a ser útil.
 Para isso, pegamos a referência a página do story para saber quando estamos ou não dentro de um story e do botão de passar visto anteriormente.
+<p/>
 
 ```sh
 #window_story: Diz se os story's ainda estão abertos
@@ -305,7 +306,9 @@ Para esta funcionalidade nos precisamos compreender um pouco melhor o funcioname
 <img src='https://user-images.githubusercontent.com/42920754/82713519-9db70700-9c61-11ea-9371-a002d6be0931.png' width='80%'>
 <p/>
 
+<p align="justify">
 Logo, se faz necessário descrever o caminho que se deve percorrer até chegar no botão que deve ser clicado. Para isso, iremos recorrer a um recurso do navegador e para usa-lo basta selecionar com o botão direito do mouse a linha a qual desejamos conseguir o endereço.
+<p/>
 
 <p align="center">
 <img src='https://user-images.githubusercontent.com/42920754/82713272-c68acc80-9c60-11ea-8108-29006c609dbc.png' width='80%'>
@@ -316,8 +319,10 @@ Fazendo isso, conseguiremos o seguinte resultado:
 ```sh
 article._8Rm4L:nth-child(1) > div:nth-child(3) > section:nth-child(1) > span:nth-child(1) > button:nth-child(1)
 ```
+<p align="justify">
 Mas desse modo, conseguiremos selecionar somente o primeiro resultado a cada 8 ou 9 elementos e não é o que queremos. Para resolver este impasse, precisamos especificar mais qual elemento queremos selecionar, e neste caso são todos os elementos que não estão curtidos.
 Podemos observer logo a baixo que um elemento muda dependendo do estado da publicação:
+<p/>
 
 <p align="center">
 <img src='https://user-images.githubusercontent.com/42920754/82716761-8f6fe780-9c6f-11ea-8f00-5379b542121a.png' width='80%'>
