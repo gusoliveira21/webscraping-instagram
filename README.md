@@ -40,23 +40,33 @@ pip install selenium
 
 ## 📚 Imports necessários:
 
-```sh
-  Espera um determinado processo
-```
 
+>Espera um determinado processo
 ```sh
 from selenium.webdriver.support.ui import WebDriverWait
-# Configurações da página web
+```
+>Configurações da página web
+```sh
 from selenium.webdriver.firefox.options import Options
-# Envia comandos do teclado (enter, f1, f2,...,f12)
+```
+>Envia comandos do teclado (enter, f1, f2,...,f12)
+```sh
 from selenium.webdriver.common.keys import Keys
-# Navegador que será usado
+```
+>Navegador que será usado
+```sh
 from selenium.webdriver import Firefox
-# Configurações do drive
+```
+>Configurações do drive
+```sh
 from selenium import webdriver
-# Modulo voltado ao tempo (calendario, horas, minutos, segundos...)
+```
+>Modulo voltado ao tempo (calendario, horas, minutos, segundos...)
+```sh
 import time
-# Iremos usar este importe para ocultar senha (é opcional)
+```
+>Iremos usar este importe para ocultar senha (é opcional)
+```sh
 import getpass 
 ```
 
