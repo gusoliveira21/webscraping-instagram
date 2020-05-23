@@ -345,7 +345,9 @@ def curte_publicacoes():
     except Exception as e:
         pass
 ```
-
+<p align="center">
+E por fim, criamos um **While** com o valor **True**, para roda-lo indefinidamente, dentro, iremos criar um acumulador chamado de aux (auxiliar), que crescera em 100 a cada volta completa. Usaremos a função de manipulação de Script do selenium ( <b> driver.execute_script() </b> ) para manipular o scroll roll da página, e para isso usaremos uma função em Script que pode ser chamada assim -> <b>window.scrollTo(Horizontal,Vertical)</b>, e logo em seguida, chamaremos a função criada anteriormente, deixando o código do seguinte modo:
+<p/>
 
 ```sh    
 #Desde página
@@ -355,9 +357,11 @@ while(True):
     driver.execute_script(f'window.scrollTo(0,{aux})')
     curte_publicacoes()            
 ```
+O resultado final:
 
-
-
+<p align="center">
+<img src='https://user-images.githubusercontent.com/42920754/82489811-9e606980-9ab8-11ea-93f2-ffed391c5c37.gif' width='30%'>
+<p/>
 
 ## :memo: License
 
