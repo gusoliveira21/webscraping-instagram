@@ -67,8 +67,11 @@ url = "https://www.instagram.com"
 # pega todas as opções disponíveis
 option = Options()
 ```
+<p align='Justify'>
+Neste momento, é importante baixar os drives do navegador que iremos usar para que o selenium possa trabalhar e como iremos usar o Firefox para este tutorial vamos baixar o <a href='https://github.com/mozilla/geckodriver/releases'><b>Gekodriver</b><a/>, para mais informações a respeito leia a <a href='https://www.selenium.dev/documentation/en/getting_started_with_webdriver/browsers/'><b>Documentação</b><a/>.
+<p/>
+- Feito isso, para que consigamos visualizar todo o processo acontecendo, é importante setarmos o valor False para o handler.
 
-Para que consigamos ver todo o processo acontecendo, é importante setarmos o valor False para o handler.
 
 ```sh
 #Sete False no handless para aparecer o processo na págia web
