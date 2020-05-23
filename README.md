@@ -336,7 +336,7 @@ article._8Rm4L:nth-child(1n) > div:nth-child(3) > section:nth-child(1) > span:nt
 ```
 
 <p align="justify">
-Agora, vamos criar uma função chamada <b> curte_publicacoes() <b/> com um <b> Try Catch <b/> para curtir os elementos encontrados e em caso de alguma excessão, usamos o atributo <b> PASS <b/> que significa passar, ou seja, deixa passar a ocorrência.
+Agora, vamos criar uma função chamada <b> curte_publicacoes() </b> com um <b> Try Catch </b> para curtir os elementos encontrados e em caso de alguma excessão, usamos o atributo <b> PASS </b> que significa passar, ou seja, deixa passar a ocorrência.
 <p/>
 
 ```sh
