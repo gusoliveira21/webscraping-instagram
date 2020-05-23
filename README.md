@@ -368,9 +368,18 @@ while(True):
 <img src='https://user-images.githubusercontent.com/42920754/82489811-9e606980-9ab8-11ea-93f2-ffed391c5c37.gif' width='30%'>
 <p/>
 
-## 🎯 Próximas funcionalidades:
+## 🎯 Próximas atualizações:
 - "Quando chegar no limite da página, atualizar página".
+- OBS: O código é bem simples e devido a isso acaba tendo alguns bugs.
 
+## 🤝 Contribua com este pequeno projeto 💙
+
+- Faça um fork desse repositório;
+- Cria uma branch com a sua feature: `git checkout -b minha-feature`;
+- Faça commit das suas alterações: `git commit -m 'feat: Minha nova feature'`;
+- Faça push para a sua branch: `git push origin minha-feature`.
+
+Depois que o merge da sua pull request for feito, você pode deletar a sua branch.
 
 
 ## :memo: License
