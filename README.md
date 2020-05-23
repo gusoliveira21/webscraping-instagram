@@ -334,8 +334,8 @@ Sendo assim, precisamos inserir esta condição no nosso código, ficando do seg
 article._8Rm4L:nth-child(1n) > div:nth-child(3) > section:nth-child(1) > span:nth-child(1) > button:nth-child(1) > svg:nth-child(1)[aria-label='Curtir']
 ```
 
-<p align="center">
-Agora, vamos criar uma função chamada **curte_publicacoes()** com um **Try Catch** para curtir os elementos encontrados e em caso de alguma excessão, usamos o atributo **pass** que significa passar, ou seja, deixa passar a ocorrência.
+<p align="justify">
+Agora, vamos criar uma função chamada <b>curte_publicacoes()<b/> com um <b>Try Catch<b/> para curtir os elementos encontrados e em caso de alguma excessão, usamos o atributo <b>PASS<b/> que significa passar, ou seja, deixa passar a ocorrência.
 <p/>
 
 ```sh
@@ -345,8 +345,8 @@ def curte_publicacoes():
     except Exception as e:
         pass
 ```
-<p align="center">
-E por fim, criamos um **While** com o valor **True**, para roda-lo indefinidamente, dentro, iremos criar um acumulador chamado de aux (auxiliar), que crescera em 100 a cada volta completa. Usaremos a função de manipulação de Script do selenium ( <b> driver.execute_script() </b> ) para manipular o scroll roll da página, e para isso usaremos uma função em Script que pode ser chamada assim -> <b>window.scrollTo(Horizontal,Vertical)</b>, e logo em seguida, chamaremos a função criada anteriormente, deixando o código do seguinte modo:
+<p align="justify">
+E por fim, criamos um <b>While<b/> com o valor <b>True<b/>, para roda-lo indefinidamente, dentro, iremos criar um acumulador chamado de aux (auxiliar), que crescera em 100 a cada volta completa. Usaremos a função de manipulação de Script do selenium ( <b> driver.execute_script() </b> ) para manipular o scroll roll da página, e para isso usaremos uma função em Script que pode ser chamada assim -> <b>window.scrollTo(Horizontal,Vertical)</b>, e logo em seguida, chamaremos a função criada anteriormente, deixando o código do seguinte modo:
 <p/>
 
 ```sh    
