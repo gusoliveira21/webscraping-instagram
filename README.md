@@ -289,7 +289,7 @@ while(True):
 <p/>
 
 ## ❤️ Curte automaticamente publicações no instagram:
-<i>Contribuição de <a href='https://github.com/luisERH'>luisERH<a/>.</i><br>
+<i>Esta funcionalidade é contribuição de <a href='https://github.com/luisERH'>luisERH<a/>.</i><br>
 Para esta funcionalidade nos precisamos compreender um pouco melhor o funcionamento do instagram.
 <br>
 
