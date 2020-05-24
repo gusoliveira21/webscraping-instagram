@@ -349,7 +349,7 @@ Logo, se faz necessário descrever o caminho que se deve percorrer até chegar n
 Fazendo isso, conseguiremos o seguinte resultado:
 Para saber mais sobre Seletores Css <a href='https://developer.mozilla.org/pt-BR/docs/Web/CSS/:nth-child'>clique aqui<a/>
 
-~~~python
+~~~css
 article._8Rm4L:nth-child(1) > div:nth-child(3) > section:nth-child(1) > span:nth-child(1) > button:nth-child(1)
 ~~~
 
