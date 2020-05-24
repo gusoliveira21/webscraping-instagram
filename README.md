@@ -28,13 +28,13 @@ Este tutorial visa dar uma visão simplista da biblioteca selenium, para mostrar
 
 ## O que é o selenium ❓
 <p align='Justify'>
-O Selenium é uma lib que permite definir testes e detectar automaticamente os resultados desses testes em um navegador preferido. Um conjunto de funções do Selenium possibilita criar interações passo a passo com uma página da web, simulando um usuário normal do sistema.
+O Selenium é uma lib que permite definir testes e detectar automaticamente os resultados desses testes em um navegador preferido. Um conjunto de funções do Selenium possibilita criar interações passo a passo com uma página web, simulando um usuário normal do sistema.
 <a href='https://www.browserstack.com/guide/python-selenium-to-run-web-automation-test'>[1]<a/>
 <p/>
  
 ## 💿 Como instalar:
 <p align='Justify'>
-Para instalar o Selenium basta executar desse modo a biblioteca será baixada para o seu ambiente Anaconda: <br>
+Para instalar o Selenium basta executar o código abaixo que irá baixar os pacotes para o seu ambiente Anaconda: <br>
 <p/>
 
 ~~~python
@@ -64,7 +64,7 @@ from selenium.webdriver import Firefox
 ~~~python
 from selenium import webdriver
 ~~~
->Modulo voltado ao tempo (calendario, horas, minutos, segundos...).
+>Modulo voltado ao tempo (calendário, horas, minutos, segundos...).
 ~~~python
 import time
 ~~~
@@ -194,7 +194,7 @@ senha_campo.send_keys(Keys.ENTER)
 ## ❗ Retirar notificação:
 
 <p align='Justify'>
-Com o resultado a cima conseguimos perceber o surgimento de uma janela JavaScript que irá aparecer sempre que o instagram for aberto pela primeira vez na sessão. O Selenium possue métodos para fechar janelas <a href='https://www.techbeamers.com/handle-alert-popup-selenium-python/'>(pode conferir mais aqui)<a/>, porém, vamos ver como fazer isso usando as funções que usamos até o momento.
+Com o resultado a cima conseguimos perceber o surgimento de uma janela JavaScript que irá aparecer sempre que o instagram for aberto pela primeira vez na sessão. O Selenium possui métodos para fechar janelas <a href='https://www.techbeamers.com/handle-alert-popup-selenium-python/'>(pode conferir mais aqui)<a/>, porém, vamos ver como fazer isso usando as funções que usamos até o momento.
 
 Inicialmente, precisamos pegar as referências da janela pois vamos usar xpath, que nada mais é do que um conjunto de regras de sintaxe para definir partes de um documento XML, para seleciona-la e armazenar em variáveis. <a href='http://www.macoratti.net/vb_xpath.htm'>[2]<a/>
 <p/>
@@ -212,14 +212,14 @@ button_dialog_box = "//button[@class='aOOlW   HoLwm ']"
 
 Após isso, criaremos uma função similar a função ***esperar_campo()***, e ela será chamada de ***espera_dialog()*** e irá retornar retornar uma resposta quando a dialog box carregar.
 
->Funcao para esperar uma resposta, caso a caixa de diálogo ainda não seja encontrada, e espera 5s após ser encontrada.
+>Função para esperar uma resposta, caso a caixa de diálogo ainda não seja encontrada, e espera 5s após ser encontrada.
 
 ~~~python
 def espera_dialog(firefox):
   return driver.find_element_by_xpath(dialog_box)
 ~~~
 
->Espera até a função ***espera_dialog()*** retornar um resultado, significando que a caixa de dialogo carregou.
+>Espera até a função ***espera_dialog()*** retornar um resultado, significando que a caixa de diálogo carregou.
 
 ~~~python
 esperando_jane_dialog = WebDriverWait(driver, 10).until(espera_dialog)
@@ -257,7 +257,7 @@ window_big = "//button[@class='jZyv1  H-yu6']"
 window_little = "//button[@class='OE3OK ']"
 ~~~
 
-O selenium possue um método chamado Click() utilizado, como o próprio nome já diz, para dar Click em um elemento. Iremos utilizar esse método para abrir os storys.
+O selenium possui um método chamado Click() utilizado, como o próprio nome já diz, para dar Click em um elemento. Iremos utilizar esse método para abrir os storys.
 
 ~~~python
 # Procedimento: Aperta para abrir um story
@@ -358,7 +358,7 @@ article._8Rm4L:nth-child(1) > div:nth-child(3) > section:nth-child(1) > span:nth
 
 <p align="justify">
 Mas desse modo, conseguiremos selecionar somente o primeiro resultado a cada 8 ou 9 elementos e não é o que queremos. Para resolver este impasse, precisamos especificar mais qual elemento queremos selecionar, e neste caso são todos os elementos que não estão curtidos.
-Podemos observer logo a baixo que um elemento muda dependendo do estado da publicação:
+Podemos observer logo abaixo que um elemento muda dependendo do estado da publicação:
 <p/>
 
 <p align="center">
