@@ -19,6 +19,10 @@
 </a>
 <p/>
 
+Versions: <br>
+ <a href='https://github.com/gusoliveira21/webscraping-instagram/blob/master/README-ING.md'> Inglês </a> <br>
+ <a href='https://github.com/gusoliveira21/webscraping-instagram/blob/master/README.md'> Português </a>
+
 ## 😏 objective:
 <p align='Justify'>
 This tutorial aims to give a simplistic view of the selenium library, to show that with few codes it is possible to manipulate a web page and for that, we will use Anaconda as a development environment.
