@@ -19,8 +19,8 @@
 <p/>
 
 Versions:
- <a href='https://github.com/gusoliveira21/webscraping-instagram/blob/master/README-ING.md> Inglês <a/>
- <a href='https://github.com/gusoliveira21/webscraping-instagram/blob/master/README.md> Português <a/>
+ <a href='https://github.com/gusoliveira21/webscraping-instagram/blob/master/README-ING.md> Inglês </a>
+ <a href='https://github.com/gusoliveira21/webscraping-instagram/blob/master/README.md'> Português </a>
 
 ## 😏 Objetivo:
 <p align='Justify'>
