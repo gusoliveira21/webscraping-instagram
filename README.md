@@ -18,8 +18,9 @@
 </a>
 <p/>
 
-- Possui versões em Inglês e Português.
-- English and Portuguese versions.
+Versions:
+- <a href='https://github.com/gusoliveira21/webscraping-instagram/blob/master/README-ING.md>Inglês<a/>
+- <a href='https://github.com/gusoliveira21/webscraping-instagram/blob/master/README-ING.md>Português<a/>
 
 ## 😏 Objetivo:
 <p align='Justify'>
