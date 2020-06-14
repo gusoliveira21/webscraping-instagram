@@ -18,8 +18,8 @@
 </a>
 <p/>
 
-Versions:
- <a href='https://github.com/gusoliveira21/webscraping-instagram/blob/master/README-ING.md> Inglês </a>
+Versions: <br>
+ <a href='https://github.com/gusoliveira21/webscraping-instagram/blob/master/README-ING.md'> Inglês </a> <br>
  <a href='https://github.com/gusoliveira21/webscraping-instagram/blob/master/README.md'> Português </a>
 
 ## 😏 Objetivo:
